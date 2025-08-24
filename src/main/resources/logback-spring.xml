@@ -1,0 +1,54 @@
+<configuration>
+    <!-- Path for the log file -->
+    <property name="LOG_FILE" value="logs/triangle-app.log"/>
+
+    <!-- Console Appender: logs to the terminal -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- File Appender: persistent logs written to disk -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_FILE}</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- ================= LAYER-SPECIFIC LOGGERS ================= -->
+
+    <!-- Controller Layer: Handles HTTP requests/responses -->
+    <!-- Keep this at INFO or ERROR to avoid logging request flood -->
+    <logger name="org.msse672.geometryapp.controller" level="INFO"/>
+
+    <!-- Service Layer: Core business logic and validation rules -->
+    <!-- DEBUG level helps observe side state, decisions, and business flow -->
+    <logger name="org.msse672.geometryapp.service" level="DEBUG"/>
+
+    <!-- Model Layer: Domain objects (usually no logging unless complex) -->
+    <!-- Optional, often left at INFO or turned off unless debugging data flow -->
+    <logger name="org.msse672.geometryapp.model" level="INFO"/>
+
+    <!-- DTO Layer: Data transfer between UI and backend -->
+    <!-- Usually quiet unless you're debugging serialization or mapping issues -->
+    <logger name="org.msse672.geometryapp.dto" level="INFO"/>
+
+    <!-- Config Layer: Spring Boot configurations and bean setups -->
+    <!-- INFO level shows active profiles, bean init, custom settings -->
+    <logger name="org.msse672.geometryapp.config" level="INFO"/>
+
+    <!-- Repository Layer: Handles DB queries (if using JPA or JDBC) -->
+    <!-- DEBUG level useful for tracing data fetches and SQL -->
+    <logger name="org.msse672.geometryapp.repository" level="DEBUG"/>
+
+    <!-- ========================================================== -->
+
+    <!-- Root logger: catches everything not matched above -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </root>
+</configuration>

@@ -1,0 +1,32 @@
+# === Java / Maven ===
+/target/
+/bin/
+.mvn/
+*.class
+*.jar
+*.war
+
+# === IDEs ===
+*.iml
+.idea/
+
+# === Databases ===
+*.db
+*.sqlite
+*.h2.db
+
+# === Environment ===
+.env
+application-dev.properties
+
+# === GitHub CI (optional) ===
+.github/workflows/
+*.yml
+
+# === OS ===
+.DS_Store
+
+# === Logs ===
+# Ignore all .log files EXCEPT those in /logs/
+*.log
+!logs/*.log

@@ -1,0 +1,1237 @@
+2025-08-17 17:01:08 ERROR [main] o.s.boot.SpringApplication - Application run failed
+org.springframework.boot.context.config.InvalidConfigDataPropertyException: Property 'spring.profiles.active' imported from location 'class path resource [application-test.properties]' is invalid in a profile specific resource [origin: class path resource [application-test.properties] - 2:24]
+	at org.springframework.boot.context.config.InvalidConfigDataPropertyException.lambda$throwIfPropertyFound$1(InvalidConfigDataPropertyException.java:121)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1117)
+	at org.springframework.boot.context.config.InvalidConfigDataPropertyException.throwIfPropertyFound(InvalidConfigDataPropertyException.java:118)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.checkForInvalidProperties(ConfigDataEnvironment.java:367)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.applyToEnvironment(ConfigDataEnvironment.java:331)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:238)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:96)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:89)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:132)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:115)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:353)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:144)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:563)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:144)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2025-08-17 17:01:08 WARN  [main] o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [org.msse672.geometryapp.auth.socket.AuthSocketServerTest@3ecedf21]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@737edcfa testClass = org.msse672.geometryapp.auth.socket.AuthSocketServerTest, locations = [], classes = [org.msse672.geometryapp.TriangleMiddlewareApplication], contextInitializerClasses = [], activeProfiles = ["test"], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4f3bbf68, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2421cc4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7c8c9a05, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@6af9fcb2, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@291a7e3c, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@4b23c30a, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@9da13109], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.boot.context.config.InvalidConfigDataPropertyException: Property 'spring.profiles.active' imported from location 'class path resource [application-test.properties]' is invalid in a profile specific resource [origin: class path resource [application-test.properties] - 2:24]
+	at org.springframework.boot.context.config.InvalidConfigDataPropertyException.lambda$throwIfPropertyFound$1(InvalidConfigDataPropertyException.java:121)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1117)
+	at org.springframework.boot.context.config.InvalidConfigDataPropertyException.throwIfPropertyFound(InvalidConfigDataPropertyException.java:118)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.checkForInvalidProperties(ConfigDataEnvironment.java:367)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.applyToEnvironment(ConfigDataEnvironment.java:331)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:238)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:96)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:89)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:132)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:115)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:353)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:144)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:563)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:144)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 74 common frames omitted
+2025-08-17 17:01:08 WARN  [main] o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [org.msse672.geometryapp.auth.socket.AuthSocketServerTest@437ebf59]
+java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@737edcfa testClass = org.msse672.geometryapp.auth.socket.AuthSocketServerTest, locations = [], classes = [org.msse672.geometryapp.TriangleMiddlewareApplication], contextInitializerClasses = [], activeProfiles = ["test"], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4f3bbf68, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2421cc4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7c8c9a05, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@6af9fcb2, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@291a7e3c, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@4b23c30a, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@9da13109], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:145)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2025-08-17 17:01:08 WARN  [main] o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [org.msse672.geometryapp.auth.socket.AuthSocketServerTest@410e94e]
+java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@737edcfa testClass = org.msse672.geometryapp.auth.socket.AuthSocketServerTest, locations = [], classes = [org.msse672.geometryapp.TriangleMiddlewareApplication], contextInitializerClasses = [], activeProfiles = ["test"], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4f3bbf68, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2421cc4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7c8c9a05, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@6af9fcb2, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@291a7e3c, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@4b23c30a, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@9da13109], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:145)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2025-08-17 17:01:08 WARN  [main] o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [org.msse672.geometryapp.auth.socket.AuthSocketServerTest@1bdbf9be]
+java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@737edcfa testClass = org.msse672.geometryapp.auth.socket.AuthSocketServerTest, locations = [], classes = [org.msse672.geometryapp.TriangleMiddlewareApplication], contextInitializerClasses = [], activeProfiles = ["test"], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4f3bbf68, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2421cc4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7c8c9a05, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@6af9fcb2, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@291a7e3c, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@4b23c30a, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@9da13109], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:145)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2025-08-17 17:01:08 WARN  [main] o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [org.msse672.geometryapp.auth.socket.AuthSocketServerTest@1da6ee17]
+java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@737edcfa testClass = org.msse672.geometryapp.auth.socket.AuthSocketServerTest, locations = [], classes = [org.msse672.geometryapp.TriangleMiddlewareApplication], contextInitializerClasses = [], activeProfiles = ["test"], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4f3bbf68, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2421cc4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7c8c9a05, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@6af9fcb2, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@291a7e3c, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@4b23c30a, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@9da13109], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:145)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2025-08-17 17:01:41 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-08-17 17:01:41 INFO  [main] o.m.g.a.socket.AuthSocketServerTest - Starting AuthSocketServerTest using Java 24 with PID 24016 (started by John Michael in D:\School\MSSE 672 - Component Based Software\triangle-middleware-app\triangle-middleware-app)
+2025-08-17 17:01:41 DEBUG [main] o.m.g.a.socket.AuthSocketServerTest - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-08-17 17:01:41 INFO  [main] o.m.g.a.socket.AuthSocketServerTest - The following 1 profile is active: "test"
+2025-08-17 17:01:42 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17 17:01:42 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2025-08-17 17:01:43 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-17 17:01:43 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-08-17 17:01:43 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-17 17:01:43 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17 17:01:43 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-08-17 17:01:43 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-17 17:01:43 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17 17:01:43 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-17 17:01:44 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17 17:01:44 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 17:01:44 INFO  [main] o.m.g.auth.socket.AuthSocketServer - Initializing AuthSocketServer... enabled=true
+2025-08-17 17:01:44 INFO  [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Auth socket server started on localhost:9191
+2025-08-17 17:01:45 INFO  [main] o.m.g.model.QuadrilateralSet - QuadrilateralSet created.
+2025-08-17 17:01:45 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17 17:01:46 INFO  [main] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-08-17 17:01:46 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17 17:01:46 INFO  [main] o.m.g.a.socket.AuthSocketServerTest - Started AuthSocketServerTest in 5.565 seconds (process running for 6.996)
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Socket request received. username='' passwordPresent=true
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.InMemAuthServiceImpl - Attempting authentication for username: 
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.InMemAuthServiceImpl - Authentication failed for user: 
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Socket auth result for user '': false
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Socket request received. username='' passwordPresent=true
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.InMemAuthServiceImpl - Attempting authentication for username: 
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.InMemAuthServiceImpl - Authentication failed for user: 
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Socket auth result for user '': false
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Socket request received. username='admin' passwordPresent=true
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.InMemAuthServiceImpl - Attempting authentication for username: admin
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.InMemAuthServiceImpl - Authentication failed for user: admin
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Socket auth result for user 'admin': false
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Socket request received. username='admin' passwordPresent=true
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.InMemAuthServiceImpl - Attempting authentication for username: admin
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.InMemAuthServiceImpl - Authentication successful for user: admin
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Socket auth result for user 'admin': true
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Socket request received. username='admin' passwordPresent=true
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.InMemAuthServiceImpl - Attempting authentication for username: admin
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.InMemAuthServiceImpl - Authentication failed for user: admin
+2025-08-17 17:01:47 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Socket auth result for user 'admin': false
+2025-08-17 17:01:47 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Auth socket server stopped.
+2025-08-17 17:01:47 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 17:01:47 ERROR [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Socket server error: Socket closed
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endAccept(NioSocketImpl.java:676)
+	at java.base/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:749)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:593)
+	at java.base/java.net.ServerSocket.platformImplAccept(ServerSocket.java:560)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:536)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:482)
+	at java.base/java.net.ServerSocket.accept(ServerSocket.java:441)
+	at org.msse672.geometryapp.auth.socket.AuthSocketServer.lambda$startServer$0(AuthSocketServer.java:52)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2025-08-17 17:01:47 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-17 17:01:47 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-17 17:25:14 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.msse672.geometryapp.auth.core.InMemAuthServiceImplTest]: InMemAuthServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-17 17:25:14 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.msse672.geometryapp.TriangleMiddlewareApplication for test class org.msse672.geometryapp.auth.core.InMemAuthServiceImplTest
+2025-08-17 17:25:15 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-08-17 17:25:15 INFO  [main] o.m.g.auth.InMemAuthServiceImplTest - Starting InMemAuthServiceImplTest using Java 24 with PID 13444 (started by John Michael in D:\School\MSSE 672 - Component Based Software\triangle-middleware-app\triangle-middleware-app)
+2025-08-17 17:25:15 DEBUG [main] o.m.g.auth.InMemAuthServiceImplTest - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-08-17 17:25:15 INFO  [main] o.m.g.auth.InMemAuthServiceImplTest - The following 1 profile is active: "test"
+2025-08-17 17:25:16 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17 17:25:16 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
+2025-08-17 17:25:17 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-17 17:25:17 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-08-17 17:25:17 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-17 17:25:17 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17 17:25:17 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-08-17 17:25:17 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-17 17:25:17 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17 17:25:18 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-17 17:25:18 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17 17:25:18 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 17:25:18 INFO  [main] o.m.g.auth.socket.AuthSocketServer - Initializing AuthSocketServer... enabled=true
+2025-08-17 17:25:18 INFO  [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Auth socket server started on localhost:9191
+2025-08-17 17:25:19 INFO  [main] o.m.g.model.QuadrilateralSet - QuadrilateralSet created.
+2025-08-17 17:25:19 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17 17:25:20 INFO  [main] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-08-17 17:25:20 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17 17:25:20 INFO  [main] o.m.g.auth.InMemAuthServiceImplTest - Started InMemAuthServiceImplTest in 5.373 seconds (process running for 6.951)
+2025-08-17 17:25:21 INFO  [main] o.m.g.auth.InMemAuthServiceImpl - Attempting authentication for username: admin
+2025-08-17 17:25:21 INFO  [main] o.m.g.auth.InMemAuthServiceImpl - Authentication successful for user: admin
+2025-08-17 17:25:21 INFO  [main] o.m.g.auth.InMemAuthServiceImpl - Attempting authentication for username: admin
+2025-08-17 17:25:21 INFO  [main] o.m.g.auth.InMemAuthServiceImpl - Authentication failed for user: admin
+2025-08-17 17:25:21 INFO  [main] o.m.g.auth.InMemAuthServiceImpl - Attempting authentication for username: admin
+2025-08-17 17:25:21 INFO  [main] o.m.g.auth.InMemAuthServiceImpl - Authentication successful for user: admin
+2025-08-17 17:25:21 INFO  [main] o.m.g.auth.InMemAuthServiceImpl - User logged out.
+2025-08-17 17:25:21 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Auth socket server stopped.
+2025-08-17 17:25:21 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 17:25:21 ERROR [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Socket server error: Socket closed
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endAccept(NioSocketImpl.java:676)
+	at java.base/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:749)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:593)
+	at java.base/java.net.ServerSocket.platformImplAccept(ServerSocket.java:560)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:536)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:482)
+	at java.base/java.net.ServerSocket.accept(ServerSocket.java:441)
+	at org.msse672.geometryapp.auth.socket.AuthSocketServer.lambda$startServer$0(AuthSocketServer.java:52)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2025-08-17 17:25:21 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-17 17:25:21 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-17 17:29:12 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.msse672.geometryapp.auth.core.InMemAuthServiceImplTest]: InMemAuthServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-17 17:29:12 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.msse672.geometryapp.TriangleMiddlewareApplication for test class org.msse672.geometryapp.auth.core.InMemAuthServiceImplTest
+2025-08-17 17:29:12 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-08-17 17:29:12 INFO  [main] o.m.g.auth.InMemAuthServiceImplTest - Starting InMemAuthServiceImplTest using Java 24 with PID 18528 (started by John Michael in D:\School\MSSE 672 - Component Based Software\triangle-middleware-app\triangle-middleware-app)
+2025-08-17 17:29:12 DEBUG [main] o.m.g.auth.InMemAuthServiceImplTest - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-08-17 17:29:12 INFO  [main] o.m.g.auth.InMemAuthServiceImplTest - The following 1 profile is active: "test"
+2025-08-17 17:29:13 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17 17:29:13 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interface.
+2025-08-17 17:29:14 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-17 17:29:14 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-08-17 17:29:14 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-17 17:29:14 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17 17:29:15 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-08-17 17:29:15 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-17 17:29:15 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17 17:29:15 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-17 17:29:16 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17 17:29:16 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 17:29:16 INFO  [main] o.m.g.auth.socket.AuthSocketServer - Initializing AuthSocketServer... enabled=true
+2025-08-17 17:29:16 INFO  [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Auth socket server started on localhost:9191
+2025-08-17 17:29:16 INFO  [main] o.m.g.model.QuadrilateralSet - QuadrilateralSet created.
+2025-08-17 17:29:16 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17 17:29:17 INFO  [main] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-08-17 17:29:17 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17 17:29:17 INFO  [main] o.m.g.auth.InMemAuthServiceImplTest - Started InMemAuthServiceImplTest in 5.363 seconds (process running for 6.872)
+2025-08-17 17:29:18 INFO  [main] o.m.g.auth.InMemAuthServiceImpl - Attempting authentication for username: admin
+2025-08-17 17:29:18 INFO  [main] o.m.g.auth.InMemAuthServiceImpl - Authentication successful for user: admin
+2025-08-17 17:29:18 INFO  [main] o.m.g.auth.InMemAuthServiceImpl - Attempting authentication for username: admin
+2025-08-17 17:29:18 INFO  [main] o.m.g.auth.InMemAuthServiceImpl - Authentication failed for user: admin
+2025-08-17 17:29:18 INFO  [main] o.m.g.auth.InMemAuthServiceImpl - Attempting authentication for username: admin
+2025-08-17 17:29:18 INFO  [main] o.m.g.auth.InMemAuthServiceImpl - Authentication successful for user: admin
+2025-08-17 17:29:18 INFO  [main] o.m.g.auth.InMemAuthServiceImpl - User logged out.
+2025-08-17 17:29:18 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: shutting down...
+2025-08-17 17:29:18 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Auth socket server stopped.
+2025-08-17 17:29:18 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: STOPPED successfully.
+2025-08-17 17:29:18 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 17:29:18 INFO  [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: server socket closed, stopping accept loop.
+2025-08-17 17:29:18 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-17 17:29:18 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-17 17:45:09 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-08-17 17:45:09 INFO  [main] o.m.g.auth.SocketAuthFilterTest - Starting SocketAuthFilterTest using Java 24 with PID 12372 (started by John Michael in D:\School\MSSE 672 - Component Based Software\triangle-middleware-app\triangle-middleware-app)
+2025-08-17 17:45:09 DEBUG [main] o.m.g.auth.SocketAuthFilterTest - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-08-17 17:45:09 INFO  [main] o.m.g.auth.SocketAuthFilterTest - The following 1 profile is active: "test"
+2025-08-17 17:45:10 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17 17:45:10 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+2025-08-17 17:45:11 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-17 17:45:11 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-08-17 17:45:11 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-17 17:45:11 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17 17:45:11 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-08-17 17:45:11 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-17 17:45:12 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17 17:45:12 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-17 17:45:12 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17 17:45:12 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 17:45:13 INFO  [main] o.m.g.auth.socket.AuthSocketServer - Initializing AuthSocketServer... enabled=true
+2025-08-17 17:45:13 INFO  [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Auth socket server started on localhost:9191
+2025-08-17 17:45:13 INFO  [main] o.m.g.model.QuadrilateralSet - QuadrilateralSet created.
+2025-08-17 17:45:13 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17 17:45:14 INFO  [main] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-08-17 17:45:14 DEBUG [main] o.m.g.auth.SocketAuthFilter - Filter 'socketAuthFilterRegistration' configured for use
+2025-08-17 17:45:14 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-08-17 17:45:14 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-08-17 17:45:14 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17 17:45:14 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 27 ms
+2025-08-17 17:45:14 INFO  [main] o.m.g.auth.SocketAuthFilterTest - Started SocketAuthFilterTest in 5.58 seconds (process running for 7.074)
+2025-08-17 17:45:15 DEBUG [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: accepted new client connection from /127.0.0.1:60171
+2025-08-17 17:45:15 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Socket request received. username='admin' passwordPresent=true
+2025-08-17 17:45:15 INFO  [pool-2-thread-1] o.m.g.auth.InMemAuthServiceImpl - Attempting authentication for username: admin
+2025-08-17 17:45:15 INFO  [pool-2-thread-1] o.m.g.auth.InMemAuthServiceImpl - Authentication failed for user: admin
+2025-08-17 17:45:15 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Socket auth result for user 'admin': false
+2025-08-17 17:45:15 DEBUG [main] o.m.g.auth.DefaultSocketAuthClient - Socket auth result for 'admin': false
+2025-08-17 17:45:15 DEBUG [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: accepted new client connection from /127.0.0.1:60172
+2025-08-17 17:45:15 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Socket request received. username='admin' passwordPresent=true
+2025-08-17 17:45:15 INFO  [pool-2-thread-1] o.m.g.auth.InMemAuthServiceImpl - Attempting authentication for username: admin
+2025-08-17 17:45:15 INFO  [pool-2-thread-1] o.m.g.auth.InMemAuthServiceImpl - Authentication successful for user: admin
+2025-08-17 17:45:15 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Socket auth result for user 'admin': true
+2025-08-17 17:45:15 DEBUG [main] o.m.g.auth.DefaultSocketAuthClient - Socket auth result for 'admin': true
+2025-08-17 17:45:15 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: shutting down...
+2025-08-17 17:45:15 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Auth socket server stopped.
+2025-08-17 17:45:15 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: STOPPED successfully.
+2025-08-17 17:45:15 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 17:45:15 INFO  [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: server socket closed, stopping accept loop.
+2025-08-17 17:45:15 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-17 17:45:15 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-17 19:18:33 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-08-17 19:18:33 INFO  [main] o.m.g.a.socket.SocketAuthFilterTest - Starting SocketAuthFilterTest using Java 24 with PID 24072 (started by John Michael in D:\School\MSSE 672 - Component Based Software\triangle-middleware-app\triangle-middleware-app)
+2025-08-17 19:18:33 DEBUG [main] o.m.g.a.socket.SocketAuthFilterTest - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-08-17 19:18:33 INFO  [main] o.m.g.a.socket.SocketAuthFilterTest - The following 1 profile is active: "test"
+2025-08-17 19:18:34 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17 19:18:35 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interface.
+2025-08-17 19:18:35 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-17 19:18:35 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-08-17 19:18:35 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-17 19:18:36 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17 19:18:36 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-08-17 19:18:36 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-17 19:18:36 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17 19:18:36 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-17 19:18:37 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17 19:18:37 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 19:18:37 INFO  [main] o.m.g.auth.socket.AuthSocketServer - Initializing AuthSocketServer... enabled=true
+2025-08-17 19:18:37 INFO  [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Auth socket server started on localhost:9191
+2025-08-17 19:18:37 INFO  [main] o.m.g.model.QuadrilateralSet - QuadrilateralSet created.
+2025-08-17 19:18:37 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17 19:18:38 INFO  [main] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-08-17 19:18:38 DEBUG [main] o.m.g.auth.socket.SocketAuthFilter - Filter 'socketAuthFilterRegistration' configured for use
+2025-08-17 19:18:38 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-08-17 19:18:38 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-08-17 19:18:38 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17 19:18:38 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 26 ms
+2025-08-17 19:18:39 INFO  [main] o.m.g.a.socket.SocketAuthFilterTest - Started SocketAuthFilterTest in 5.618 seconds (process running for 7.123)
+2025-08-17 19:18:39 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: shutting down...
+2025-08-17 19:18:39 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Auth socket server stopped.
+2025-08-17 19:18:39 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: STOPPED successfully.
+2025-08-17 19:18:39 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 19:18:39 INFO  [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: server socket closed, stopping accept loop.
+2025-08-17 19:18:39 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-17 19:18:39 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-17 19:20:47 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-08-17 19:20:47 INFO  [main] o.m.g.a.socket.SocketAuthFilterTest - Starting SocketAuthFilterTest using Java 24 with PID 14724 (started by John Michael in D:\School\MSSE 672 - Component Based Software\triangle-middleware-app\triangle-middleware-app)
+2025-08-17 19:20:47 DEBUG [main] o.m.g.a.socket.SocketAuthFilterTest - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-08-17 19:20:47 INFO  [main] o.m.g.a.socket.SocketAuthFilterTest - The following 1 profile is active: "test"
+2025-08-17 19:20:48 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17 19:20:48 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
+2025-08-17 19:20:49 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-17 19:20:49 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-08-17 19:20:49 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-17 19:20:49 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17 19:20:50 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-08-17 19:20:50 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-17 19:20:50 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17 19:20:50 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-17 19:20:51 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17 19:20:51 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 19:20:51 INFO  [main] o.m.g.auth.socket.AuthSocketServer - Initializing AuthSocketServer... enabled=true
+2025-08-17 19:20:51 INFO  [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Auth socket server started on localhost:9191
+2025-08-17 19:20:51 INFO  [main] o.m.g.model.QuadrilateralSet - QuadrilateralSet created.
+2025-08-17 19:20:51 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17 19:20:52 INFO  [main] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-08-17 19:20:52 DEBUG [main] o.m.g.auth.socket.SocketAuthFilter - Filter 'socketAuthFilterRegistration' configured for use
+2025-08-17 19:20:52 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-08-17 19:20:52 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-08-17 19:20:52 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17 19:20:52 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 26 ms
+2025-08-17 19:20:52 INFO  [main] o.m.g.a.socket.SocketAuthFilterTest - Started SocketAuthFilterTest in 5.516 seconds (process running for 6.985)
+2025-08-17 19:20:53 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: shutting down...
+2025-08-17 19:20:53 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Auth socket server stopped.
+2025-08-17 19:20:53 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: STOPPED successfully.
+2025-08-17 19:20:53 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 19:20:53 INFO  [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: server socket closed, stopping accept loop.
+2025-08-17 19:20:53 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-17 19:20:53 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-17 19:21:31 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-08-17 19:21:31 INFO  [main] o.m.g.a.socket.SocketAuthFilterTest - Starting SocketAuthFilterTest using Java 24 with PID 19496 (started by John Michael in D:\School\MSSE 672 - Component Based Software\triangle-middleware-app\triangle-middleware-app)
+2025-08-17 19:21:31 DEBUG [main] o.m.g.a.socket.SocketAuthFilterTest - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-08-17 19:21:31 INFO  [main] o.m.g.a.socket.SocketAuthFilterTest - The following 1 profile is active: "test"
+2025-08-17 19:21:32 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17 19:21:32 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interface.
+2025-08-17 19:21:33 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-17 19:21:33 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-08-17 19:21:33 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-17 19:21:33 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17 19:21:33 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-08-17 19:21:33 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-17 19:21:34 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17 19:21:34 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-17 19:21:35 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17 19:21:35 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 19:21:35 INFO  [main] o.m.g.auth.socket.AuthSocketServer - Initializing AuthSocketServer... enabled=true
+2025-08-17 19:21:35 INFO  [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Auth socket server started on localhost:9191
+2025-08-17 19:21:35 INFO  [main] o.m.g.model.QuadrilateralSet - QuadrilateralSet created.
+2025-08-17 19:21:35 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17 19:21:36 INFO  [main] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-08-17 19:21:36 DEBUG [main] o.m.g.auth.socket.SocketAuthFilter - Filter 'socketAuthFilterRegistration' configured for use
+2025-08-17 19:21:36 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-08-17 19:21:36 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-08-17 19:21:36 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17 19:21:36 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 26 ms
+2025-08-17 19:21:37 INFO  [main] o.m.g.a.socket.SocketAuthFilterTest - Started SocketAuthFilterTest in 5.925 seconds (process running for 7.434)
+2025-08-17 19:21:37 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: shutting down...
+2025-08-17 19:21:37 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Auth socket server stopped.
+2025-08-17 19:21:37 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: STOPPED successfully.
+2025-08-17 19:21:37 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 19:21:37 INFO  [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: server socket closed, stopping accept loop.
+2025-08-17 19:21:37 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-17 19:21:37 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-17 19:21:59 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-08-17 19:21:59 INFO  [main] o.m.g.a.socket.SocketAuthFilterTest - Starting SocketAuthFilterTest using Java 24 with PID 21168 (started by John Michael in D:\School\MSSE 672 - Component Based Software\triangle-middleware-app\triangle-middleware-app)
+2025-08-17 19:21:59 DEBUG [main] o.m.g.a.socket.SocketAuthFilterTest - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-08-17 19:21:59 INFO  [main] o.m.g.a.socket.SocketAuthFilterTest - The following 1 profile is active: "test"
+2025-08-17 19:22:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17 19:22:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interface.
+2025-08-17 19:22:01 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-17 19:22:01 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-08-17 19:22:01 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-17 19:22:01 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17 19:22:01 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-08-17 19:22:01 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-17 19:22:02 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17 19:22:02 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-17 19:22:03 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17 19:22:03 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 19:22:03 INFO  [main] o.m.g.auth.socket.AuthSocketServer - Initializing AuthSocketServer... enabled=true
+2025-08-17 19:22:03 INFO  [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Auth socket server started on localhost:9191
+2025-08-17 19:22:03 INFO  [main] o.m.g.model.QuadrilateralSet - QuadrilateralSet created.
+2025-08-17 19:22:03 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17 19:22:04 INFO  [main] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-08-17 19:22:04 DEBUG [main] o.m.g.auth.socket.SocketAuthFilter - Filter 'socketAuthFilterRegistration' configured for use
+2025-08-17 19:22:04 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-08-17 19:22:04 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-08-17 19:22:04 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17 19:22:04 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 29 ms
+2025-08-17 19:22:05 INFO  [main] o.m.g.a.socket.SocketAuthFilterTest - Started SocketAuthFilterTest in 6.189 seconds (process running for 7.684)
+2025-08-17 19:22:05 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: shutting down...
+2025-08-17 19:22:05 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Auth socket server stopped.
+2025-08-17 19:22:05 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: STOPPED successfully.
+2025-08-17 19:22:05 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 19:22:05 INFO  [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer: server socket closed, stopping accept loop.
+2025-08-17 19:22:05 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-17 19:22:05 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-17 23:17:55 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.msse672.geometryapp.auth.controller.AuthControllerTest]: AuthControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-17 23:17:55 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.msse672.geometryapp.TriangleMiddlewareApplication for test class org.msse672.geometryapp.auth.controller.AuthControllerTest
+2025-08-17 23:17:56 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-08-17 23:17:56 INFO  [main] o.m.g.a.c.AuthControllerTest - Starting AuthControllerTest using Java 24 with PID 25360 (started by John Michael in D:\School\MSSE 672 - Component Based Software\triangle-middleware-app\triangle-middleware-app)
+2025-08-17 23:17:56 DEBUG [main] o.m.g.a.c.AuthControllerTest - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-08-17 23:17:56 INFO  [main] o.m.g.a.c.AuthControllerTest - The following 1 profile is active: "dev"
+2025-08-17 23:17:57 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17 23:17:57 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interface.
+2025-08-17 23:17:58 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17 23:17:58 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-08-17 23:17:58 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-17 23:17:58 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17 23:17:58 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-17 23:17:59 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5100c143
+2025-08-17 23:17:59 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-17 23:18:00 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17 23:18:00 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 23:18:00 INFO  [main] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer initialized with host=localhost, port=9090, enabled=true
+2025-08-17 23:18:00 INFO  [main] o.m.g.auth.socket.AuthSocketServer - Starting AuthSocketServer...
+2025-08-17 23:18:00 ERROR [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Socket server error: Address already in use: bind
+java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:511)
+	at java.base/sun.nio.ch.Net.bind(Net.java:500)
+	at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:630)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:326)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:222)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:138)
+	at org.msse672.geometryapp.auth.socket.AuthSocketServer.lambda$startServer$0(AuthSocketServer.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2025-08-17 23:18:00 INFO  [main] o.m.g.model.QuadrilateralSet - QuadrilateralSet created.
+2025-08-17 23:18:01 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17 23:18:02 DEBUG [main] o.m.g.auth.socket.SocketAuthFilter - Filter 'socketAuthFilterRegistration' configured for use
+2025-08-17 23:18:02 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-08-17 23:18:02 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-08-17 23:18:02 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17 23:18:02 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 29 ms
+2025-08-17 23:18:02 INFO  [main] o.m.g.a.c.AuthControllerTest - Started AuthControllerTest in 6.212 seconds (process running for 7.878)
+2025-08-17 23:18:02 DEBUG [main] o.m.g.a.s.DefaultSocketAuthClient - Socket auth result for 'admin': true
+2025-08-17 23:18:02 DEBUG [main] o.m.g.a.s.DefaultSocketAuthClient - Socket auth token for 'admin': 7328f3a0-b60f-4961-9463-daa526289b34-admin
+2025-08-17 23:18:02 INFO  [main] o.m.g.auth.controller.AuthController - Token generated for user '7328f3a0-b60f-4961-9463-daa526289b34-admin'
+2025-08-17 23:18:02 DEBUG [main] o.m.g.a.s.DefaultSocketAuthClient - Socket auth result for 'admin': false
+2025-08-17 23:18:02 DEBUG [main] o.m.g.a.s.DefaultSocketAuthClient - Socket auth token for 'admin': false
+2025-08-17 23:18:02 WARN  [main] o.m.g.auth.controller.AuthController - Invalid credentials for user 'admin'
+2025-08-17 23:18:03 WARN  [main] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Auth-Token' for method parameter type String is not present]
+2025-08-17 23:18:03 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Stopping AuthSocketServer...
+2025-08-17 23:18:03 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Executor service shut down.
+2025-08-17 23:18:03 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 23:18:03 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-17 23:18:03 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-17 23:20:06 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.msse672.geometryapp.auth.controller.AuthControllerTest]: AuthControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-17 23:20:06 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.msse672.geometryapp.TriangleMiddlewareApplication for test class org.msse672.geometryapp.auth.controller.AuthControllerTest
+2025-08-17 23:20:06 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-08-17 23:20:06 INFO  [main] o.m.g.a.c.AuthControllerTest - Starting AuthControllerTest using Java 24 with PID 25024 (started by John Michael in D:\School\MSSE 672 - Component Based Software\triangle-middleware-app\triangle-middleware-app)
+2025-08-17 23:20:06 DEBUG [main] o.m.g.a.c.AuthControllerTest - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-08-17 23:20:06 INFO  [main] o.m.g.a.c.AuthControllerTest - The following 1 profile is active: "dev"
+2025-08-17 23:20:07 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17 23:20:08 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interface.
+2025-08-17 23:20:08 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17 23:20:08 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-08-17 23:20:08 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-17 23:20:09 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17 23:20:09 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-17 23:20:09 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d22ed6c
+2025-08-17 23:20:09 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-17 23:20:10 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17 23:20:10 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 23:20:10 INFO  [main] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer initialized with host=localhost, port=9090, enabled=true
+2025-08-17 23:20:10 INFO  [main] o.m.g.auth.socket.AuthSocketServer - Starting AuthSocketServer...
+2025-08-17 23:20:10 ERROR [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Socket server error: Address already in use: bind
+java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:511)
+	at java.base/sun.nio.ch.Net.bind(Net.java:500)
+	at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:630)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:326)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:222)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:138)
+	at org.msse672.geometryapp.auth.socket.AuthSocketServer.lambda$startServer$0(AuthSocketServer.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2025-08-17 23:20:11 INFO  [main] o.m.g.model.QuadrilateralSet - QuadrilateralSet created.
+2025-08-17 23:20:11 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17 23:20:12 DEBUG [main] o.m.g.auth.socket.SocketAuthFilter - Filter 'socketAuthFilterRegistration' configured for use
+2025-08-17 23:20:12 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-08-17 23:20:12 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-08-17 23:20:12 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17 23:20:12 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 27 ms
+2025-08-17 23:20:12 INFO  [main] o.m.g.a.c.AuthControllerTest - Started AuthControllerTest in 6.255 seconds (process running for 8.092)
+2025-08-17 23:20:13 DEBUG [main] o.m.g.a.s.DefaultSocketAuthClient - Socket auth result for 'admin': true
+2025-08-17 23:20:13 DEBUG [main] o.m.g.a.s.DefaultSocketAuthClient - Socket auth token for 'admin': 36d98060-f9e2-49c2-b459-1642c897cbcf-admin
+2025-08-17 23:20:13 INFO  [main] o.m.g.auth.controller.AuthController - Token generated for user '36d98060-f9e2-49c2-b459-1642c897cbcf-admin'
+2025-08-17 23:20:13 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Stopping AuthSocketServer...
+2025-08-17 23:20:13 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Executor service shut down.
+2025-08-17 23:20:13 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 23:20:13 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-17 23:20:13 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-17 23:20:51 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.msse672.geometryapp.auth.controller.AuthControllerTest]: AuthControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-17 23:20:51 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.msse672.geometryapp.TriangleMiddlewareApplication for test class org.msse672.geometryapp.auth.controller.AuthControllerTest
+2025-08-17 23:20:52 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-08-17 23:20:52 INFO  [main] o.m.g.a.c.AuthControllerTest - Starting AuthControllerTest using Java 24 with PID 19512 (started by John Michael in D:\School\MSSE 672 - Component Based Software\triangle-middleware-app\triangle-middleware-app)
+2025-08-17 23:20:52 DEBUG [main] o.m.g.a.c.AuthControllerTest - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-08-17 23:20:52 INFO  [main] o.m.g.a.c.AuthControllerTest - The following 1 profile is active: "dev"
+2025-08-17 23:20:53 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17 23:20:53 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interface.
+2025-08-17 23:20:54 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17 23:20:54 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-08-17 23:20:54 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-17 23:20:54 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17 23:20:54 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-17 23:20:55 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e030feb
+2025-08-17 23:20:55 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-17 23:20:56 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17 23:20:56 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 23:20:56 INFO  [main] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer initialized with host=localhost, port=9090, enabled=true
+2025-08-17 23:20:56 INFO  [main] o.m.g.auth.socket.AuthSocketServer - Starting AuthSocketServer...
+2025-08-17 23:20:56 ERROR [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Socket server error: Address already in use: bind
+java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:511)
+	at java.base/sun.nio.ch.Net.bind(Net.java:500)
+	at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:630)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:326)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:222)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:138)
+	at org.msse672.geometryapp.auth.socket.AuthSocketServer.lambda$startServer$0(AuthSocketServer.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2025-08-17 23:20:56 INFO  [main] o.m.g.model.QuadrilateralSet - QuadrilateralSet created.
+2025-08-17 23:20:56 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17 23:20:58 DEBUG [main] o.m.g.auth.socket.SocketAuthFilter - Filter 'socketAuthFilterRegistration' configured for use
+2025-08-17 23:20:58 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-08-17 23:20:58 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-08-17 23:20:58 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17 23:20:58 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 28 ms
+2025-08-17 23:20:58 INFO  [main] o.m.g.a.c.AuthControllerTest - Started AuthControllerTest in 6.185 seconds (process running for 7.933)
+2025-08-17 23:20:58 DEBUG [main] o.m.g.a.s.DefaultSocketAuthClient - Socket auth result for 'admin': false
+2025-08-17 23:20:58 DEBUG [main] o.m.g.a.s.DefaultSocketAuthClient - Socket auth token for 'admin': false
+2025-08-17 23:20:58 WARN  [main] o.m.g.auth.controller.AuthController - Invalid credentials for user 'admin'
+2025-08-17 23:20:58 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Stopping AuthSocketServer...
+2025-08-17 23:20:58 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Executor service shut down.
+2025-08-17 23:20:58 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 23:20:58 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-17 23:20:58 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-17 23:21:47 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.msse672.geometryapp.auth.controller.AuthControllerTest]: AuthControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-17 23:21:47 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.msse672.geometryapp.TriangleMiddlewareApplication for test class org.msse672.geometryapp.auth.controller.AuthControllerTest
+2025-08-17 23:21:48 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-08-17 23:21:48 INFO  [main] o.m.g.a.c.AuthControllerTest - Starting AuthControllerTest using Java 24 with PID 20232 (started by John Michael in D:\School\MSSE 672 - Component Based Software\triangle-middleware-app\triangle-middleware-app)
+2025-08-17 23:21:48 DEBUG [main] o.m.g.a.c.AuthControllerTest - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-08-17 23:21:48 INFO  [main] o.m.g.a.c.AuthControllerTest - The following 1 profile is active: "dev"
+2025-08-17 23:21:49 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17 23:21:49 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2025-08-17 23:21:50 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17 23:21:50 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-08-17 23:21:50 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-17 23:21:50 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17 23:21:50 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-17 23:21:51 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@12404f9d
+2025-08-17 23:21:51 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-17 23:21:52 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17 23:21:52 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 23:21:52 INFO  [main] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer initialized with host=localhost, port=9090, enabled=true
+2025-08-17 23:21:52 INFO  [main] o.m.g.auth.socket.AuthSocketServer - Starting AuthSocketServer...
+2025-08-17 23:21:52 ERROR [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Socket server error: Address already in use: bind
+java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:511)
+	at java.base/sun.nio.ch.Net.bind(Net.java:500)
+	at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:630)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:326)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:222)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:138)
+	at org.msse672.geometryapp.auth.socket.AuthSocketServer.lambda$startServer$0(AuthSocketServer.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2025-08-17 23:21:52 INFO  [main] o.m.g.model.QuadrilateralSet - QuadrilateralSet created.
+2025-08-17 23:21:53 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17 23:21:54 DEBUG [main] o.m.g.auth.socket.SocketAuthFilter - Filter 'socketAuthFilterRegistration' configured for use
+2025-08-17 23:21:54 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-08-17 23:21:54 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-08-17 23:21:54 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17 23:21:54 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 28 ms
+2025-08-17 23:21:54 INFO  [main] o.m.g.a.c.AuthControllerTest - Started AuthControllerTest in 6.425 seconds (process running for 8.322)
+2025-08-17 23:21:54 WARN  [main] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Auth-Token' for method parameter type String is not present]
+2025-08-17 23:21:55 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Stopping AuthSocketServer...
+2025-08-17 23:21:55 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Executor service shut down.
+2025-08-17 23:21:55 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 23:21:55 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-17 23:21:55 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-17 23:23:15 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.msse672.geometryapp.auth.core.InMemAuthServiceImplTest]: InMemAuthServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-17 23:23:15 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.msse672.geometryapp.TriangleMiddlewareApplication for test class org.msse672.geometryapp.auth.core.InMemAuthServiceImplTest
+2025-08-17 23:23:46 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-08-17 23:23:46 INFO  [main] o.m.g.a.socket.AuthSocketServerTest - Starting AuthSocketServerTest using Java 24 with PID 5332 (started by John Michael in D:\School\MSSE 672 - Component Based Software\triangle-middleware-app\triangle-middleware-app)
+2025-08-17 23:23:46 DEBUG [main] o.m.g.a.socket.AuthSocketServerTest - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-08-17 23:23:46 INFO  [main] o.m.g.a.socket.AuthSocketServerTest - The following 1 profile is active: "test"
+2025-08-17 23:23:47 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17 23:23:47 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interface.
+2025-08-17 23:23:48 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-17 23:23:48 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-08-17 23:23:48 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-17 23:23:48 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17 23:23:49 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-08-17 23:23:49 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-17 23:23:49 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17 23:23:49 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-17 23:23:50 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17 23:23:50 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 23:23:50 INFO  [main] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer initialized with host=localhost, port=9191, enabled=true
+2025-08-17 23:23:50 INFO  [main] o.m.g.auth.socket.AuthSocketServer - Starting AuthSocketServer...
+2025-08-17 23:23:50 INFO  [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Auth socket server started on localhost:9191
+2025-08-17 23:23:50 INFO  [main] o.m.g.model.QuadrilateralSet - QuadrilateralSet created.
+2025-08-17 23:23:50 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17 23:23:51 INFO  [main] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-08-17 23:23:51 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17 23:23:51 INFO  [main] o.m.g.a.socket.AuthSocketServerTest - Started AuthSocketServerTest in 5.621 seconds (process running for 7.11)
+2025-08-17 23:23:52 DEBUG [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Accepted connection from /127.0.0.1:59708
+2025-08-17 23:23:52 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Handling client from /127.0.0.1:59708
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Received request: line1='', line2=''
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Login attempt for user: ''
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Attempting authentication for username: 
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Authentication failed for user: 
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Authentication failed for ''.
+2025-08-17 23:23:52 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Closed connection with /127.0.0.1:59708
+2025-08-17 23:23:52 DEBUG [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Accepted connection from /127.0.0.1:59709
+2025-08-17 23:23:52 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Handling client from /127.0.0.1:59709
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Received request: line1='', line2='password123'
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Login attempt for user: ''
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Attempting authentication for username: 
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Authentication failed for user: 
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Authentication failed for ''.
+2025-08-17 23:23:52 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Closed connection with /127.0.0.1:59709
+2025-08-17 23:23:52 DEBUG [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Accepted connection from /127.0.0.1:59710
+2025-08-17 23:23:52 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Handling client from /127.0.0.1:59710
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Received request: line1='admin', line2=''
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Login attempt for user: 'admin'
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Attempting authentication for username: admin
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Authentication failed for user: admin
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Authentication failed for 'admin'.
+2025-08-17 23:23:52 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Closed connection with /127.0.0.1:59710
+2025-08-17 23:23:52 DEBUG [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Accepted connection from /127.0.0.1:59711
+2025-08-17 23:23:52 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Handling client from /127.0.0.1:59711
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Received request: line1='admin', line2='password123'
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Login attempt for user: 'admin'
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Attempting authentication for username: admin
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Authentication successful for user: admin
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Authentication successful for 'admin', token issued.
+2025-08-17 23:23:52 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Closed connection with /127.0.0.1:59711
+2025-08-17 23:23:52 DEBUG [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Accepted connection from /127.0.0.1:59713
+2025-08-17 23:23:52 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Handling client from /127.0.0.1:59713
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Received request: line1='admin', line2='wrong'
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Login attempt for user: 'admin'
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Attempting authentication for username: admin
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Authentication failed for user: admin
+2025-08-17 23:23:52 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Authentication failed for 'admin'.
+2025-08-17 23:23:52 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Closed connection with /127.0.0.1:59713
+2025-08-17 23:23:52 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Stopping AuthSocketServer...
+2025-08-17 23:23:52 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - stopServer: Server socket closed.
+2025-08-17 23:23:52 INFO  [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - startServer: Server socket closed.
+2025-08-17 23:23:52 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Executor service shut down.
+2025-08-17 23:23:52 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 23:23:52 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-17 23:23:52 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-17 23:24:32 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.msse672.geometryapp.auth.controller.AuthQuadControllerTest]: AuthQuadControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-17 23:24:32 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.msse672.geometryapp.TriangleMiddlewareApplication for test class org.msse672.geometryapp.auth.controller.AuthQuadControllerTest
+2025-08-17 23:24:33 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-08-17 23:24:33 INFO  [main] o.m.g.a.c.AuthQuadControllerTest - Starting AuthQuadControllerTest using Java 24 with PID 21952 (started by John Michael in D:\School\MSSE 672 - Component Based Software\triangle-middleware-app\triangle-middleware-app)
+2025-08-17 23:24:33 DEBUG [main] o.m.g.a.c.AuthQuadControllerTest - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-08-17 23:24:33 INFO  [main] o.m.g.a.c.AuthQuadControllerTest - The following 1 profile is active: "dev"
+2025-08-17 23:24:34 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17 23:24:34 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interface.
+2025-08-17 23:24:35 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17 23:24:35 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-08-17 23:24:35 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-17 23:24:35 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17 23:24:35 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-17 23:24:36 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1013871e
+2025-08-17 23:24:36 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-17 23:24:36 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17 23:24:36 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 23:24:36 INFO  [main] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer initialized with host=localhost, port=9090, enabled=true
+2025-08-17 23:24:36 INFO  [main] o.m.g.auth.socket.AuthSocketServer - Starting AuthSocketServer...
+2025-08-17 23:24:36 ERROR [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Socket server error: Address already in use: bind
+java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:511)
+	at java.base/sun.nio.ch.Net.bind(Net.java:500)
+	at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:630)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:326)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:222)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:138)
+	at org.msse672.geometryapp.auth.socket.AuthSocketServer.lambda$startServer$0(AuthSocketServer.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2025-08-17 23:24:37 INFO  [main] o.m.g.model.QuadrilateralSet - QuadrilateralSet created.
+2025-08-17 23:24:37 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17 23:24:38 DEBUG [main] o.m.g.auth.socket.SocketAuthFilter - Filter 'socketAuthFilterRegistration' configured for use
+2025-08-17 23:24:38 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-08-17 23:24:38 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-08-17 23:24:38 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17 23:24:38 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 24 ms
+2025-08-17 23:24:38 INFO  [main] o.m.g.a.c.AuthQuadControllerTest - Started AuthQuadControllerTest in 5.72 seconds (process running for 7.277)
+2025-08-17 23:24:39 DEBUG [main] o.m.g.a.s.DefaultSocketAuthClient - Socket auth result for 'admin': true
+2025-08-17 23:24:39 DEBUG [main] o.m.g.a.s.DefaultSocketAuthClient - Socket auth token for 'admin': 51dd1c89-d5d6-4ae4-9b11-ad76f8349140-admin
+2025-08-17 23:24:39 INFO  [main] o.m.g.auth.controller.AuthController - Token generated for user '51dd1c89-d5d6-4ae4-9b11-ad76f8349140-admin'
+2025-08-17 23:24:39 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Stopping AuthSocketServer...
+2025-08-17 23:24:39 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Executor service shut down.
+2025-08-17 23:24:39 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 23:24:39 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-17 23:24:39 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-17 23:45:28 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-08-17 23:45:28 INFO  [main] o.m.g.a.socket.AuthSocketServerTest - Starting AuthSocketServerTest using Java 24 with PID 13572 (started by John Michael in D:\School\MSSE 672 - Component Based Software\triangle-middleware-app\triangle-middleware-app)
+2025-08-17 23:45:28 DEBUG [main] o.m.g.a.socket.AuthSocketServerTest - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-08-17 23:45:28 INFO  [main] o.m.g.a.socket.AuthSocketServerTest - The following 1 profile is active: "test"
+2025-08-17 23:45:29 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17 23:45:29 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interface.
+2025-08-17 23:45:30 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-17 23:45:30 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-08-17 23:45:30 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-17 23:45:31 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17 23:45:31 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-08-17 23:45:31 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-17 23:45:31 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17 23:45:31 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-17 23:45:32 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17 23:45:32 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 23:45:32 INFO  [main] o.m.g.auth.socket.AuthSocketServer - AuthSocketServer initialized with host=localhost, port=9191, enabled=true
+2025-08-17 23:45:32 INFO  [main] o.m.g.auth.socket.AuthSocketServer - Starting AuthSocketServer...
+2025-08-17 23:45:32 INFO  [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Auth socket server started on localhost:9191
+2025-08-17 23:45:32 INFO  [main] o.m.g.model.QuadrilateralSet - QuadrilateralSet created.
+2025-08-17 23:45:33 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17 23:45:34 INFO  [main] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-08-17 23:45:34 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17 23:45:34 INFO  [main] o.m.g.a.socket.AuthSocketServerTest - Started AuthSocketServerTest in 6.292 seconds (process running for 7.865)
+2025-08-17 23:45:35 DEBUG [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Accepted connection from /127.0.0.1:60295
+2025-08-17 23:45:35 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Handling client from /127.0.0.1:60295
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Received request: line1='', line2=''
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Login attempt for user: ''
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Attempting authentication for username: 
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Authentication failed for user: 
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Authentication failed for ''.
+2025-08-17 23:45:35 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Closed connection with /127.0.0.1:60295
+2025-08-17 23:45:35 DEBUG [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Accepted connection from /127.0.0.1:60296
+2025-08-17 23:45:35 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Handling client from /127.0.0.1:60296
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Received request: line1='', line2='password123'
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Login attempt for user: ''
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Attempting authentication for username: 
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Authentication failed for user: 
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Authentication failed for ''.
+2025-08-17 23:45:35 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Closed connection with /127.0.0.1:60296
+2025-08-17 23:45:35 DEBUG [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Accepted connection from /127.0.0.1:60297
+2025-08-17 23:45:35 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Handling client from /127.0.0.1:60297
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Received request: line1='admin', line2=''
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Login attempt for user: 'admin'
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Attempting authentication for username: admin
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Authentication failed for user: admin
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Authentication failed for 'admin'.
+2025-08-17 23:45:35 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Closed connection with /127.0.0.1:60297
+2025-08-17 23:45:35 DEBUG [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Accepted connection from /127.0.0.1:60298
+2025-08-17 23:45:35 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Handling client from /127.0.0.1:60298
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Received request: line1='admin', line2='password123'
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Login attempt for user: 'admin'
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Attempting authentication for username: admin
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Authentication successful for user: admin
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Authentication successful for 'admin', token issued.
+2025-08-17 23:45:35 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Closed connection with /127.0.0.1:60298
+2025-08-17 23:45:35 DEBUG [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - Accepted connection from /127.0.0.1:60300
+2025-08-17 23:45:35 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Handling client from /127.0.0.1:60300
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Received request: line1='admin', line2='wrong'
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Login attempt for user: 'admin'
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Attempting authentication for username: admin
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.core.InMemAuthServiceImpl - Authentication failed for user: admin
+2025-08-17 23:45:35 INFO  [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Authentication failed for 'admin'.
+2025-08-17 23:45:35 DEBUG [pool-2-thread-1] o.m.g.auth.socket.AuthSocketServer - Closed connection with /127.0.0.1:60300
+2025-08-17 23:45:35 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Stopping AuthSocketServer...
+2025-08-17 23:45:35 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - stopServer: Server socket closed.
+2025-08-17 23:45:35 INFO  [SpringApplicationShutdownHook] o.m.g.auth.socket.AuthSocketServer - Executor service shut down.
+2025-08-17 23:45:35 INFO  [auth-socket-server] o.m.g.auth.socket.AuthSocketServer - startServer: Server socket closed.
+2025-08-17 23:45:35 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17 23:45:35 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-17 23:45:35 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-17 23:47:27 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.msse672.geometryapp.auth.core.InMemAuthServiceImplTest]: InMemAuthServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-17 23:47:27 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.msse672.geometryapp.TriangleMiddlewareApplication for test class org.msse672.geometryapp.auth.core.InMemAuthServiceImplTest
+2025-08-17 23:54:28 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.msse672.geometryapp.auth.core.InMemAuthServiceImplTest]: InMemAuthServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-17 23:54:28 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.msse672.geometryapp.TriangleMiddlewareApplication for test class org.msse672.geometryapp.auth.core.InMemAuthServiceImplTest
+2025-08-17 23:55:43 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.msse672.geometryapp.auth.core.InMemAuthServiceImplTest]: InMemAuthServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-17 23:55:44 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.msse672.geometryapp.TriangleMiddlewareApplication for test class org.msse672.geometryapp.auth.core.InMemAuthServiceImplTest
